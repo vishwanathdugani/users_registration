@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+
+  web:
+    build: .
+    environment:
+      - SECRET_KEY=my_secret_key
+    ports:
+      - "8000:80"
+    volumes:
+      - .:/app
+
